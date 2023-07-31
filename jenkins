@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bvenkydevops/vprofile-project-ci-jenkins.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Nari12n/nexus.git']])
             }
         }
         stage('build'){
